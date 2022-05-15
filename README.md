@@ -1,4 +1,4 @@
-#Comandos básicos para uso do Git
+# Comandos básicos para uso do Git e GitHub
 
 Para verificar a versão do git instalada utilize 'git --version'.
 
@@ -21,7 +21,8 @@ Para inspecionar um repositório, verificando as informações do diretório, us
 Para adicionar um arquivo de alteração, visando atualização do diretório no próximo commit, use 'git add <nomedoarquivo>'.
 
 ***Obs.: Não implica em efeito real no repositório, as alterações só serão gravadas, de fato, após o commit.***
-*Obs.2: No lugar do <nomedoarquivo> pode ser utilizado . para representar uma quantidade X total de arquivos que estão na "espera" para ser adicionado.*
+
+*Obs.2: No lugar do "<nomedoarquivo>" pode ser utilizado "." para representar uma quantidade X total de arquivos que estão na "espera" para ser adicionado.*
 
 Para desfazer um git add, ou seja, retroceder a ação de adição de um arquivo que você fez no diretório, basta usar o comando 'git rm --cached <nomedoarquivo>'.
 
@@ -62,3 +63,5 @@ Para iniciar um novo repositório no GitHub basta ir na parte dedicada aos repos
 Para fazer o clone de um projeto remoto para a máquina basta ir até a opção 'Code', aba 'SSH' (caso tenha configurado a nova chave SSH anteriormente) e copiar o código disponível. Em seguida, abra o terminal a partir do diretório local que deseja hospedar o clone e utilize o código 'git clone' seguido na mesma linha do código anteriormente copiado. Automaticamente o clone será disponibilizado.
 
 Para gerenciar o conjunto de repositórios remotos exibindo o endereço URL detalhado após o nome use 'git remote -v'.
+
+Para que as alterações do commit sejam identificadas na plataforma do GitHub é imprescindível que se use 'git push' (essa etapa apresentará um erro caso a conexão com a chave SSH não tenha sido estabelecida corretamente).
